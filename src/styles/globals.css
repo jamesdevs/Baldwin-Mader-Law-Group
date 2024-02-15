@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  @apply mx-auto max-w-[86rem] px-4 sm:px-10 md:px-12 lg:px-16;
+}
+
+h1 {
+  @apply text-4xl font-bold tracking-tighter md:text-7xl font-montserrat;
+}
+
+h2 {
+  @apply text-2xl md:text-4xl font-bold leading-8 font-montserrat;
+}
+
+h3 {
+  @apply md:text-3xl text-2xl font-semibold leading-8 font-montserrat;
+}
+
+h4 {
+  @apply text-lg md:text-2xl font-semibold font-montserrat;
+}
+
+h5 {
+  @apply text-xl font-semibold font-montserrat;
+}
+
+h6 {
+  @apply text-lg font-semibold font-montserrat;
+}
+
+p {
+  @apply text-gray-700 leading-relaxed text-sm md:text-base font-lato;
+}
+
+.sheetContent {
+  @apply !ring-0 !outline-none w-full;
+}
+
+.sheetContent > button {
+  display: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-white font-bold text-xl;
+}
+
+.swiper-button-prev {
+  @apply max-md:left-0;
+}
+
+.swiper-button-next {
+  @apply max-md:right-0;
+}
+
+.btn {
+  @apply transition-all text-center duration-300 px-6 py-2 sm:py-2.5 text-sm sm:text-lg border-2;
+}
+
+.btn-primary {
+  @apply border-2 border-primary bg-primary text-white hover:bg-secondary hover:border-secondary hover:text-white;
+}
+
+.btn-primary-outlined {
+  @apply border-2 border-primary text-primary hover:bg-primary hover:border-primary hover:text-white;
+}
+
+.btn-secondary {
+  @apply border-2 border-secondary bg-secondary text-white hover:bg-bg-main hover:border-bg-main hover:text-white;
+}
+
+.btn-after {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  color: #fff !important;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+.btn-after::after {
+  height: 7px;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  display: block;
+  margin-top: 0px;
+  content: "";
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #2ea8d5 !important;
+  transition: 0.3 all;
+}
+
+.btn-after:hover::after {
+  background: #e4d183 !important;
+}
+
+.padding-y {
+  @apply py-10 sm:py-16 lg:py-[4.5rem];
+}
+
+.padding-t {
+  @apply pt-10 sm:pt-16 lg:pt-[4.5rem];
+}
+
+.padding-b {
+  @apply pb-10 sm:pb-16 lg:pb-[4.5rem];
+}
+
+.testimonial-background-container {
+  clip-path: inset(0 0 0 0);
+}
+
+/* LightBox Start */
+
+.lightbox-wrapper {
+  transition: none !important;
+  -o-transition: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+}
+
+.lightbox-wrapper .react-viewer-mask {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox-wrapper img {
+  border-radius: 5px;
+}
+
+.lightbox-wrapper .react-viewer-footer {
+  margin: 0;
+}
+
+.lightbox-wrapper .react-viewer-attribute {
+  display: none;
+}
+
+.lightbox-wrapper .react-viewer-footer .react-viewer-toolbar {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  padding: 20px 0;
+  height: 60px;
+  margin: 0px !important;
+}
+
+.input {
+  @apply border border-gray-300 bg-white focus:border-gray-700 focus-visible:border-gray-700 focus:ring-0 focus-visible:outline-none rounded-md block h-11 px-2 py-1 w-full;
+}
+
+.textarea {
+  @apply h-auto;
+}
+
+.input-label {
+  @apply text-gray-500 mb-1 inline-block;
+}
+
+.input-error-message {
+  @apply mt-1 text-red-700 text-sm;
+}
+
+.hero-slider .swiper-button-prev,
+.hero-slider .swiper-button-next {
+  @apply max-sm:hidden;
+}
