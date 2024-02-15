@@ -36,6 +36,7 @@ module.exports = {
 
         bg: {
           main: "#2A2F42",
+          footer: "#122342",
         },
 
         header: {

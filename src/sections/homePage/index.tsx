@@ -10,7 +10,7 @@ const HomePage = ({ posts }: any) => {
       <Hero />
       <About />
       <WhyChooseUs />
-      <Services />
+      {/* <Services /> */}
       <Cta />
     </>
   );

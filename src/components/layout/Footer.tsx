@@ -13,50 +13,38 @@ import Image from "../image";
 
 const Footer = () => {
   return (
-    <footer aria-labelledby="footer-heading" className="bg-gray-900">
+    <footer aria-labelledby="footer-heading" className="bg-bg-footer">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
 
       <div className="container">
         <div className="xl:flex grid grid-cols-2 justify-between pt-16 pb-8 text-white gap-12">
-          <div className="sm:max-w-xs col-span-2 xl:max-w-xs">
-            <Image
-              className="h-20 md:h-24 aspect-square"
-              src="/logo-transparent.png"
-              alt="logo"
-            />
-            <p className="mt-3 text-primary text-lg font-bold tracking-wider uppercase">
-              {INFO.companyName}
+          <div className="sm:max-w-xs col-span-2 xl:max-w-xs flex flex-col">
+            <Link href="/" className={"py-2 text-white font-bold uppercase"}>
+              (Logo)
+            </Link>
+
+            <p className="mt-1 text-gray-300 text-base">
+              Securities Litigation Law Firm dedicated to recovering investments
+              for defrauded investors. Contact us for a free consultation.
             </p>
-            <p className="mt-1 text-white text-lg tracking-wider uppercase">
-              Alameda and Palo Alto Area Design Build
-            </p>
-            <div className="mt-3 gap-2 flex">
-              {socialLinks.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-base leading-6 hover:text-gray-900 justify-center flex items-start gap-2"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={item.icon}
-                    className="w-8 h-8 bg-gray-700 hover:bg-gray-600 hover:text-gray-300 transition-all duration-300 text-gray-300 rounded-full p-2"
-                  />
-                </Link>
-              ))}
-            </div>
+            <Link
+              href="/contact-us"
+              className="w-fit btn btn-default btn-sm mt-4"
+            >
+              Contact Us
+            </Link>
           </div>
 
           <div className="col-span-2 sm:col-span-1 sm:max-w-xs xl:max-w-sm">
             <p className=" uppercase text-xl mb-5 font-semibold text-white">
               Links
             </p>
-            <ul className="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-x-24">
+            <ul className="grid grid-cols-2 sm:grid-cols-1 gap-x-14">
               {navigations.map((item) => (
                 <li
-                  className="mb-4 text-gray-300 linkHover  uppercase text-lg hover:text-primary transition-colors duration-300"
+                  className="mb-4 text-gray-300 linkHover  text-lg hover:text-primary transition-colors duration-300"
                   key={item.title}
                 >
                   <Link href={item.href}>{item.title}</Link>
@@ -109,7 +97,8 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-700 py-6 flex flex-wrap gap-6 text-center sm:text-left justify-center md:flex-row flex-col items-center">
           <p className="text-sm text-gray-300">
-            &copy; {new Date().getFullYear()} {INFO.companyName}. All rights
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="text-primary">{INFO.companyName}</span>. All rights
             reserved.
           </p>
         </div>
