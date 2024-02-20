@@ -1,8 +1,32 @@
 import Image from "@/components/image";
 import Title from "@/components/title";
 import motionVariants from "@/utils/motionVariants";
+import {
+  faArrowLeftLong,
+  faArrowRight,
+  faArrowRightLong,
+  faCheckDouble,
+  faCircle,
+  faRightLong,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
+const features = [
+  {
+    content: "Experienced Team",
+  },
+  {
+    content: "Proven Track Record",
+  },
+  {
+    content: "Focused Expertise",
+  },
+  {
+    content: "Personalized Service",
+  },
+];
 
 const About = () => {
   return (
@@ -11,7 +35,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-40 lg:gap-16">
           <div className="flex w-full relative mx-auto max-w-xl min-h-[250px] sm:min-h-[350px]">
             <div className="flex w-full whitespace-nowrap relative">
-              <p className="font-archivo h-max font-bold text-lg lg:text-2xl text-[#2F373D] absolute top-0 left-0 sm:relative sm:-rotate-90 mt-14 lg:mt-20">
+              <p className="font-archivo text-center h-max font-bold text-lg lg:text-2xl text-[#2F373D] absolute top-0 left-0 sm:relative sm:-rotate-90 mt-14 lg:mt-20">
                 <span className="text-5xl lg:text-8xl">70</span> <br />
                 Years Experience
               </p>
@@ -39,54 +63,39 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Title
-              title="Our Commitment to Exceptional Quality"
+              title="Representing victims of investment fraud"
               subTitle="About Us"
             />
-            <p className="mb-4">
-              Welcome to AAA Construction Services, LLC, your premier
-              destination for top-tier kitchen and bathroom renovation and
-              remodel services. We specialize exclusively in these two essential
-              spaces, allowing us to deliver unparalleled expertise in every
-              project.
+            <p className="mb-6">
+              With over 70 years of combined experience, our investment fraud
+              lawyers have recovered millions of dollars in hundreds of cases on
+              behalf of individuals and institutions. Having handled over 600
+              cases involving virtually every type of investment fraud, our
+              experience is unparalleled.
             </p>
 
-            {/* <p className="mb-2 font-bold font-titilliumWeb text-black text-xl">
-              Our Guaranteed:
-            </p>
-            <ul className="mb-4 flex flex-col gap-1 ml-3">
-              <li className="font-archivo flex items-center gap-2 font-normal text-base text-gray-600">
-                <FontAwesomeIcon icon={faCircle} className="w-1 " />
-                Competitive Pricing
-              </li>
-              <li className="font-archivo flex items-center gap-2 font-normal text-base text-gray-600">
-                <FontAwesomeIcon icon={faCircle} className="w-1 " />
-                Quality Craftsmanship
-              </li>
-              <li className="font-archivo flex items-center gap-2 font-normal text-base text-gray-600">
-                <FontAwesomeIcon icon={faCircle} className="w-1 " />
-                Top Rated Contractors
-              </li>
-            </ul> */}
+            <ul className="mb-6 grid grid-cols-2 gap-x-4 gap-y-2 ml-3">
+              {features.map((item) => (
+                <li
+                  key={item.content}
+                  className="font-archivo flex items-center gap-4 font-normal text-base text-gray-800"
+                >
+                  <FontAwesomeIcon icon={faCheckDouble} className="w-4 " />
+                  <h3 className="text-base font-lato font-bold">
+                    {item.content}
+                  </h3>
+                </li>
+              ))}
+            </ul>
             <p className="mb-6">
-              Our commitment to excellence is unwavering, with a dedicated team
-              of professionals who take pride in their attention to detail and
-              craftsmanship. We don’t just create beautiful spaces; we build
-              them to last.
+              We have uncovered major financial and securities fraud nationwide.
+              Our results tell our story. Baldwin Mader Law Group has offices in
+              San Francisco, Los Angeles, and Palm Springs.
             </p>
 
             <div className="flex gap-2 sm:gap-4 flex-wrap">
-              <Link
-                className="btn btn-primary w-fit min-w-[8rem]"
-                href="/contact"
-              >
-                Start Your Project
-              </Link>
-
-              <Link
-                className="btn btn-secondary w-fit min-w-[8rem]"
-                href="/about-us"
-              >
-                Learn More
+              <Link href="/contact" className="btn-after !text-black">
+                Contact Us
               </Link>
             </div>
           </motion.div>

@@ -66,7 +66,7 @@ const Hero = () => {
 
         <div className="container z-10 relative h-full flex flex-col justify-center flex-1">
           <div className="max-w-4xl mt-[60px]">
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left max-w-xl">
               <motion.p
                 className="text-white tracking-widest text-lg"
                 initial="initial"
@@ -76,7 +76,7 @@ const Hero = () => {
                 variants={motionVariants.fadeUp(40)}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Baldwin Mader Law Group
+                Investment Fraud Lawyers
                 <br className="sm:block hidden" />
               </motion.p>
 
@@ -89,9 +89,23 @@ const Hero = () => {
                 variants={motionVariants.fadeUp(40)}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Securing Your <br /> Financial Future
+                Baldwin Mader <br /> Law Group
                 <br className="sm:block hidden" />
               </motion.h1>
+
+              <motion.p
+                className="text-gray-200 mt-4 text-lg"
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                exit="exit"
+                variants={motionVariants.fadeUp(40)}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                70 Years of Collective Experience in Securities Litigation,
+                Investment Fraud, Whistleblowers Before the Securities and
+                Exchange Commission &amp; Elder Financial Fraud.
+              </motion.p>
 
               <motion.div
                 className="mt-6 flex flex-wrap justify-center sm:justify-start items-center gap-y-6 gap-x-10"
@@ -102,7 +116,7 @@ const Hero = () => {
                 variants={motionVariants.fadeUp(40)}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link href="/contact" target="_blank" className="btn-after">
+                <Link href="/contact" className="btn-after">
                   Contact Us
                 </Link>
               </motion.div>

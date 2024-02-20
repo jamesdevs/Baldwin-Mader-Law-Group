@@ -104,7 +104,7 @@ p {
   margin-bottom: 35px;
   font-size: 24px;
   letter-spacing: -0.6px;
-  color: #fff !important;
+  color: #fff;
   padding-bottom: 0;
   cursor: pointer;
 }
