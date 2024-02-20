@@ -25,8 +25,8 @@ const Testimonial = () => {
 
           <div className="container absolute  -bottom-16 left-1/2 -translate-x-1/2 rounded-xl">
             <Title
-              title="Our Legal Focus"
-              subTitle="Protecting Your Investments"
+              title="Our Testimonials"
+              subTitle="What Our Clients Are Saying"
               center
               white
             />
