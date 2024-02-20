@@ -9,7 +9,7 @@ const Cta = () => {
           <Image
             src="/images/cta.jpg"
             className="!absolute h-full inset-0"
-            imageClassName="object-cover"
+            imageClassName="object-cover object-bottom"
             alt="cta-logo"
           />
 

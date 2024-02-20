@@ -1,14 +1,7 @@
 import Image from "@/components/image";
 import Title from "@/components/title";
 import motionVariants from "@/utils/motionVariants";
-import {
-  faArrowLeftLong,
-  faArrowRight,
-  faArrowRightLong,
-  faCheckDouble,
-  faCircle,
-  faRightLong,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCheckDouble } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Link from "next/link";

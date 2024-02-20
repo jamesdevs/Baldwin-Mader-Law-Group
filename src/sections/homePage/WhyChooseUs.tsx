@@ -34,7 +34,7 @@ const items = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="padding-y bg-gray-100/80 mt-28">
+    <section className="padding-t bg-[#F1F5FA]">
       <div className="container">
         <Title
           title="Why Choose BLVD?"

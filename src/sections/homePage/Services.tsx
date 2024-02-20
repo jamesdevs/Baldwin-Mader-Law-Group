@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="padding-y bg-bg-main relative">
+    <section className="padding-y bg-bg-primary relative mt-28">
       <Image
         src={"/images/gallery/image-1.jpeg"}
         className="h-full inset-0 opacity-10 !absolute w-full group-hover:scale-110 transition-all duration-300"
@@ -31,12 +31,6 @@ const Services = () => {
                 variants={fadeIn("up", "spring", index * 0.5, 0.75)}
                 className="relative group overflow-hidden"
               >
-                <Image
-                  src={item.imgSrc}
-                  className="h-[clamp(12rem,70vw,20rem)] lg:h-[26rem] w-full group-hover:scale-[107%] transition-all duration-500"
-                  alt={item.slug}
-                  imageClassName="object-cover"
-                />
                 <div className="bg-gradient-to-tr from-[rgba(0,0,0,0.8)] via-[rgba(0,0,0,0.2)] to-transparent absolute inset-0" />
 
                 <div className="absolute bottom-4 left-0 px-5">

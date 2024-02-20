@@ -52,6 +52,10 @@ p {
   @apply text-gray-700 leading-relaxed text-sm md:text-base font-lato;
 }
 
+a {
+  @apply font-lato;
+}
+
 .sheetContent {
   @apply !ring-0 !outline-none w-full;
 }
@@ -101,7 +105,6 @@ p {
   position: relative;
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 35px;
   font-size: 24px;
   letter-spacing: -0.6px;
   color: #fff;
