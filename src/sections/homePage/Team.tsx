@@ -31,7 +31,7 @@ const Team = () => {
               </div> */}
 
               <div className="shadow-sm hover:shadow-lg transition-all duration-500 hover:border-gray-300 rounded-sm">
-                <div className="flex h-full flex-col bg-white">
+                <div className="flex h-full flex-col bg-white rounded-sm overflow-hidden">
                   <Image
                     src={item.imgSrc}
                     alt={item.name}
