@@ -12,8 +12,8 @@ const About = () => {
           <div className="flex w-full relative mx-auto max-w-xl min-h-[250px] sm:min-h-[350px]">
             <div className="flex w-full whitespace-nowrap relative">
               <p className="font-archivo h-max font-bold text-lg lg:text-2xl text-[#2F373D] absolute top-0 left-0 sm:relative sm:-rotate-90 mt-14 lg:mt-20">
-                <span className="text-5xl lg:text-8xl">60+</span> <br />
-                Year Experience
+                <span className="text-5xl lg:text-8xl">70</span> <br />
+                Years Experience
               </p>
               <Image
                 src="/images/about/image-8.jpg"

@@ -195,3 +195,18 @@ p {
 .hero-slider .swiper-button-next {
   @apply max-sm:hidden;
 }
+
+.zoom-in {
+  transition: transform 6s ease-in-out 1s;
+  transform: scale(1.1);
+}
+
+.zoom-in-2 {
+  transition: transform 6s ease-in-out 0s;
+  transform: scale(1.1);
+}
+
+.zoom-out {
+  transition: transform 6s ease-in-out;
+  transform: scale(1);
+}
