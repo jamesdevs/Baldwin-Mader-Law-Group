@@ -7,18 +7,16 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="padding-y bg-bg-primary relative mt-28">
-      <Image
-        src={"/images/gallery/image-1.jpeg"}
-        className="h-full inset-0 opacity-10 !absolute w-full group-hover:scale-110 transition-all duration-300"
-        imageClassName="object-cover"
-        alt="background"
-      />
+    <section className="padding-y bg-bg-primary/50 relative mt-28">
       <div className="container">
-        <Title title="Our Services" subTitle="Building Dreams" center white />
+        <Title
+          title="Our Legal Focus"
+          subTitle="Protecting Your Investments"
+          center
+        />
 
         <motion.div
-          className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10"
           variants={staggerContainer()}
           initial="hidden"
           whileInView="show"
@@ -28,13 +26,22 @@ const Services = () => {
             <Link href={`/services/${item.slug}`}>
               <motion.div
                 key={item.slug}
-                variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-                className="relative group overflow-hidden"
+                variants={fadeIn("up", "spring", 0.2, 0.75)}
+                className="relative group overflow-hidden flex gap-4"
               >
-                <div className="bg-gradient-to-tr from-[rgba(0,0,0,0.8)] via-[rgba(0,0,0,0.2)] to-transparent absolute inset-0" />
+                <Image
+                  src={item.icon}
+                  className="h-16 w-16 shrink-0"
+                  alt={item.slug}
+                  imageClassName="object-contain"
+                />
 
-                <div className="absolute bottom-4 left-0 px-5">
-                  <h3 className="text-white text-2xl">{item.title}</h3>
+                <div className="">
+                  <h3 className="text-black font-lato text-xl mb-2">
+                    {item.title}
+                  </h3>
+
+                  <p className="">{item.description}</p>
                 </div>
               </motion.div>
             </Link>
