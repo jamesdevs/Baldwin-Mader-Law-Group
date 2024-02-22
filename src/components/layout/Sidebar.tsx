@@ -1,29 +1,25 @@
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { INFO } from "@/constants";
+import navigations from "@/constants/navigations";
+import socialLinks from "@/constants/socialLinks";
+import formatPhone from "@/utils/formatPhone";
 import {
   faBarsStaggered,
   faClose,
   faEnvelope,
-  faLocation,
   faLocationDot,
-  faPhone,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import socialLinks from "@/constants/socialLinks";
-import { INFO } from "@/constants";
-import navigations from "@/constants/navigations";
-import Image from "../image";
-import formatPhone from "@/utils/formatPhone";
 
 const CustomSheetClose = (props: any) => {
   return (
