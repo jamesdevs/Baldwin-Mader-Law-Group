@@ -8,7 +8,7 @@ const About2 = () => {
   return (
     <section className="padding-y">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-40 lg:gap-10">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-20 lg:gap-10">
           <motion.div
             className="flex flex-col lg:py-6 order-2 lg:order-1"
             initial="initial"

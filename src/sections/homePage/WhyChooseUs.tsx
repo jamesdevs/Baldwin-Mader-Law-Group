@@ -15,8 +15,8 @@ const WhyChooseUs = () => {
   const distance = useTransform(scrollYProgress, [0, 0.5], [1.3, 1]);
 
   return (
-    <section className="relative h-[30rem] flex flex-col justify-center">
-      <div className="overflow-hidden">
+    <section className="relative flex flex-col py-40">
+      <div className="overflow-hidden ">
         <Image
           src="/images/cta/image-6.jpg"
           className="!absolute h-full inset-0 overflow-hidden"
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
       <div className="absolute left-0 top-0 bottom-0 z-10 w-full bg-gradient-to-br from-[rgba(0,0,0,0.65)] via-[rgba(0,0,0,0.4)] to-transparent" />
 
       <div className="container grid lg:grid-cols-2 relative z-10 lg:items-center">
-        <div className="flex flex-col max-lg:text-center max-lg:items-center max-sm:items-start max-sm:text-left">
+        <div className="flex flex-col max-lg:text-center max-lg:items-center">
           <Title
             title="Why Choose Us?"
             subTitle="Expert Securities Litigation & Fraud Recovery"

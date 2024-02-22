@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section className="padding-y">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-40 lg:gap-16">
+        <div className="grid xl:grid-cols-2 gap-6 sm:gap-40 lg:gap-16">
           <div className="flex w-full relative mx-auto max-w-xl min-h-[250px] sm:min-h-[350px]">
             <div className="flex w-full whitespace-nowrap relative">
               <p className="font-archivo text-center h-max font-bold text-lg lg:text-2xl text-[#2F373D] absolute top-0 left-0 sm:relative sm:-rotate-90 mt-14 lg:mt-20">
@@ -67,13 +67,13 @@ const About = () => {
               experience is unparalleled.
             </p>
 
-            <ul className="mb-6 grid grid-cols-2 gap-x-4 gap-y-2 ml-3">
+            <ul className="mb-6 grid sm:grid-cols-2 gap-x-4 gap-y-2 ml-3">
               {features.map((item) => (
                 <li
                   key={item.content}
                   className="font-archivo flex items-center gap-4 font-normal text-base text-gray-800"
                 >
-                  <FontAwesomeIcon icon={faCheckDouble} className="w-4 " />
+                  <FontAwesomeIcon icon={faCheckDouble} className="w-4" />
                   <h3 className="text-base font-lato font-bold">
                     {item.content}
                   </h3>

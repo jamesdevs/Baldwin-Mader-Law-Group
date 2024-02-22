@@ -47,12 +47,12 @@ const Header = ({ topHeader = true }) => {
                   <span>
                     <FontAwesomeIcon
                       icon={faPhoneSquare}
-                      className={`w-4 text-white`}
+                      className={`w-5 text-white`}
                     />
                   </span>
                   <div className="flex flex-col">
                     <p
-                      className={`text-white text-sm group-hover:text-primary transition-colors duration-300 leading-tight`}
+                      className={`text-white text-base group-hover:text-primary transition-colors duration-300 leading-tight`}
                     >
                       {INFO.phone.replaceAll(")", "").replaceAll("(", "")}
                     </p>
@@ -69,12 +69,12 @@ const Header = ({ topHeader = true }) => {
                   <span>
                     <FontAwesomeIcon
                       icon={faEnvelopeSquare}
-                      className={`w-4 text-white`}
+                      className={`w-5 text-white`}
                     />
                   </span>
                   <div className="flex flex-col">
                     <p
-                      className={`text-white text-sm group-hover:text-primary transition-colors duration-300 leading-tight`}
+                      className={`text-white text-base group-hover:text-primary transition-colors duration-300 leading-tight`}
                     >
                       {INFO.email}
                     </p>
@@ -92,7 +92,7 @@ const Header = ({ topHeader = true }) => {
                 >
                   <FontAwesomeIcon
                     icon={item.icon}
-                    className="w-[1.85rem] h-[1.85rem] text-white hover:text-primary duration-300 transition-all rounded-full p-1.5"
+                    className="w-[1.9rem] h-[1.9rem] text-white hover:text-primary duration-300 transition-all rounded-full p-1.5"
                   />
                 </Link>
               ))}

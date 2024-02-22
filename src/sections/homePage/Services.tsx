@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className="padding-y bg-bg-primary/50 relative mt-28">
+    <section className="padding-y bg-bg-primary/50 relative xl:mt-28">
       <div className="container">
         <Title
           title="Our Legal Focus"
@@ -15,7 +15,7 @@ const Services = () => {
         />
 
         <motion.div
-          className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10"
+          className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-10"
           variants={staggerContainer()}
           initial="hidden"
           whileInView="show"
@@ -29,7 +29,7 @@ const Services = () => {
             >
               <Image
                 src={item.icon}
-                className="h-14 w-14 shrink-0"
+                className="h-11 lg:h-14 w-11 lg:w-14 shrink-0"
                 alt={item.slug}
                 imageClassName="object-contain"
               />

@@ -10,7 +10,7 @@ const Team = () => {
     <section className="bg-[#F1F5FA] pb-10  pt-16">
       <div className="container">
         <Title title="Attorney Profiles" subTitle="Meet the crew" center />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {team.map((item) => (
             <Link
               href="/attorney-profiles"

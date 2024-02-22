@@ -28,7 +28,7 @@ const CustomSheetClose = (props: any) => {
     <SheetClose asChild {...props}>
       <FontAwesomeIcon
         icon={faClose}
-        className="transition-all duration-300 text-xl cursor-pointer w-6 border-1 rounded-full p-1 border-black top-4 right-4 absolute"
+        className="transition-all duration-300 text-xl cursor-pointer w-6 border-1 p-1 border-black top-4 right-4 absolute"
       />
     </SheetClose>
   );
@@ -51,7 +51,7 @@ const Sidebar = ({ isScrolled }: any) => {
           <SheetTitle className="text-left">
             <Link href="/" className="py-2 flex items-center gap-1">
               <Image
-                className="h-12 md:h-14 xl:h-16 aspect-[1002/294] invert-0"
+                className="h-14 aspect-[1002/294] invert"
                 src="/logo-4.png"
                 alt="logo"
               />
@@ -87,7 +87,7 @@ const Sidebar = ({ isScrolled }: any) => {
                 target="_blank"
               >
                 <div
-                  className={`inline-flex font-bold items-center text-sm gap-2 justify-center rounded-full`}
+                  className={`inline-flex font-bold items-center text-sm gap-2 justify-center`}
                 >
                   <FontAwesomeIcon
                     icon={faPhoneVolume}
@@ -107,7 +107,7 @@ const Sidebar = ({ isScrolled }: any) => {
                 target="_blank"
               >
                 <div
-                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center rounded-full`}
+                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
@@ -127,7 +127,7 @@ const Sidebar = ({ isScrolled }: any) => {
                 target="_blank"
               >
                 <div
-                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center rounded-full`}
+                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}
                 >
                   <FontAwesomeIcon
                     icon={faLocationDot}
@@ -153,7 +153,7 @@ const Sidebar = ({ isScrolled }: any) => {
               >
                 <FontAwesomeIcon
                   icon={item.icon}
-                  className="w-8 h-8 text-gray-500 border border-gray-300 rounded-full p-1.5"
+                  className="w-8 h-8 text-gray-500 border border-gray-300 p-1.5"
                 />
               </Link>
             ))}
