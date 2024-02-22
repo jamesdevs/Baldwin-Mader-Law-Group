@@ -4,6 +4,13 @@ export default [
     title: "Home",
     href: "/",
   },
+
+  {
+    id: "attorney-profiles",
+    title: "Attorney Profiles",
+    href: "/attorney-profiles",
+  },
+
   {
     id: "recent-results",
     title: "Recent Results",
@@ -14,14 +21,10 @@ export default [
     title: "Client Reviews",
     href: "/client-reviews",
   },
-  {
-    id: "attorney-profiles",
-    title: "Attorney Profiles",
-    href: "/attorney-profiles",
-  },
-  {
-    id: "current-investigations",
-    title: "Current Investigations",
-    href: "/current-investigations",
-  },
+
+  // {
+  //   id: "current-investigations",
+  //   title: "Current Investigations",
+  //   href: "/current-investigations",
+  // },
 ];

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Custom404 = () => {
   return (
-    <div className="text-center my-auto">
+    <div className="text-center my-auto min-h-[27rem] flex justify-center items-center flex-col">
       <p className="text-4xl font-semibold text-primary">404</p>
       <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
         Page not found
@@ -13,7 +13,7 @@ const Custom404 = () => {
       <div className="mt-10 flex items-center justify-center gap-x-6">
         <Link
           href="/"
-          className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="rounded-sm bg-primary px-3.5 py-2.5 text-lg transition-all duration-300 font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           Go back home
         </Link>
