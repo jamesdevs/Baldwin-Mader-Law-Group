@@ -9,7 +9,7 @@ const ClientReviewsPage = () => {
         hasBreadCrumb
       />
       <section className="padding-y">
-        <div className="container">{}</div>
+        <div className="container"></div>
       </section>
     </>
   );
