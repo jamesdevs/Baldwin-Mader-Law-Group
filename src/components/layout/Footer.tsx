@@ -5,6 +5,8 @@ import formatPhone from "@/utils/formatPhone";
 import {
   faEnvelope,
   faLocationDot,
+  faMobile,
+  faMobileAlt,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -76,7 +78,7 @@ const Footer = () => {
                   className="hover:text-primary transition-colors duration-300 flex gap-2"
                 >
                   <FontAwesomeIcon
-                    icon={faPhoneVolume}
+                    icon={faMobileAlt}
                     className="w-4 text-primary"
                   />{" "}
                   {INFO.phone}
