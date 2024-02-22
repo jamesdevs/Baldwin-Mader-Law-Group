@@ -1,9 +1,8 @@
 import Image from "@/components/image";
 import Title from "@/components/title";
-import { motion } from "framer-motion";
 import services from "@/constants/services";
 import { fadeIn, staggerContainer } from "@/utils/motionVariants";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -23,28 +22,26 @@ const Services = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {services.map((item, index) => (
-            <Link href={`/services/${item.slug}`}>
-              <motion.div
-                key={item.slug}
-                variants={fadeIn("up", "spring", 0.2, 0.75)}
-                className="relative group overflow-hidden flex gap-4"
-              >
-                <Image
-                  src={item.icon}
-                  className="h-16 w-16 shrink-0"
-                  alt={item.slug}
-                  imageClassName="object-contain"
-                />
+            <motion.div
+              key={item.slug}
+              variants={fadeIn("up", "spring", 0.2, 0.75)}
+              className="relative group overflow-hidden flex gap-4"
+            >
+              <Image
+                src={item.icon}
+                className="h-14 w-14 shrink-0"
+                alt={item.slug}
+                imageClassName="object-contain"
+              />
 
-                <div className="">
-                  <h3 className="text-black font-lato text-xl mb-2">
-                    {item.title}
-                  </h3>
+              <div className="">
+                <h3 className="text-black font-lato text-xl mb-2">
+                  {item.title}
+                </h3>
 
-                  <p className="">{item.description}</p>
-                </div>
-              </motion.div>
-            </Link>
+                <p className="">{item.description}</p>
+              </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>
