@@ -12,5 +12,5 @@ export const INFO = {
 export const MetaData = {
   title: "Baldwin Law Group | Your Trusted Securities Litigation Partner",
   description:
-    "With over six decades of collective expertise, Baldwin Law Group specializes in recovering millions for defrauded investors. Contact us today to explore your options.",
+    "With over seven decades of collective expertise, Baldwin Law Group specializes in recovering millions for defrauded investors. Contact us today to explore your options.",
 };

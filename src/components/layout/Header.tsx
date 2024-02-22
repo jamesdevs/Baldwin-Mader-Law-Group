@@ -47,7 +47,7 @@ const Header = ({ topHeader = true }) => {
                   <span>
                     <FontAwesomeIcon
                       icon={faPhoneSquare}
-                      className={`w-5 text-white`}
+                      className={`w-[1.05rem] text-white`}
                     />
                   </span>
                   <div className="flex flex-col">
@@ -69,7 +69,7 @@ const Header = ({ topHeader = true }) => {
                   <span>
                     <FontAwesomeIcon
                       icon={faEnvelopeSquare}
-                      className={`w-5 text-white`}
+                      className={`w-[1.05rem] text-white`}
                     />
                   </span>
                   <div className="flex flex-col">
@@ -130,7 +130,7 @@ const Header = ({ topHeader = true }) => {
                   key={item.id}
                   href={item.href}
                   className={cn(
-                    "text-base font-bold leading-6 font-lato text-white hover:text-primary transition-colors duration-300",
+                    "text-base font-bold leading-6 uppercase font-lato text-white hover:text-primary transition-colors duration-300",
                     isScrolled && "text-black",
                     router.asPath === item.href && "text-primary"
                   )}
