@@ -1,10 +1,11 @@
+import Testimonials from "@/components/testimonials";
 import About from "./About";
 import About2 from "./About2";
 import Cta from "./Cta";
 import Hero from "./Hero";
 import Services from "./Services";
 import Team from "./Team";
-import Testimonial from "./Testimonial";
+import WhyChooseUs from "./WhyChooseUs";
 
 const HomePage = ({ posts }: any) => {
   return (
@@ -13,7 +14,8 @@ const HomePage = ({ posts }: any) => {
       <About />
       <Services />
       <About2 />
-      <Testimonial />
+      <WhyChooseUs />
+      <Testimonials />
       <Team />
       <Cta />
     </>

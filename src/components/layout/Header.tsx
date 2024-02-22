@@ -1,21 +1,18 @@
-import navigations from "@/constants/navigations";
-import Image from "../image";
-import Link from "next/link";
-import Sidebar from "./Sidebar";
-import formatPhone from "@/utils/formatPhone";
 import { INFO } from "@/constants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faEnvelopeSquare,
-  faPhone,
-  faPhoneSquare,
-  faPhoneVolume,
-} from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
-import { cn } from "@/utils";
-import { useRouter } from "next/router";
+import navigations from "@/constants/navigations";
 import socialLinks from "@/constants/socialLinks";
+import { cn } from "@/utils";
+import formatPhone from "@/utils/formatPhone";
+import {
+  faEnvelopeSquare,
+  faPhoneSquare,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import Image from "../image";
+import Sidebar from "./Sidebar";
 
 const Header = ({ topHeader = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -110,7 +107,7 @@ const Header = ({ topHeader = true }) => {
             isScrolled && "bg-white/80 backdrop-blur-sm shadow-lg"
           )}
         >
-          <nav className="container flex justify-between py-4 items-center">
+          <nav className="container flex justify-between py-2 items-center">
             <div className="flex lg:flex-1">
               <Link
                 href="/"
@@ -119,8 +116,12 @@ const Header = ({ topHeader = true }) => {
                   isScrolled && "text-black"
                 )}
               >
-                Baldwin Mader
-                <br /> Law Group (Logo)
+                <Image
+                  className="h-12 md:h-14 xl:h-16 aspect-[1002/294]"
+                  imageClassName={cn(isScrolled && "invert")}
+                  src="/logo-4.png"
+                  alt="logo"
+                />
               </Link>
             </div>
             <div className="hidden lg:flex items-center gap-x-8 xl:gap-x-8">

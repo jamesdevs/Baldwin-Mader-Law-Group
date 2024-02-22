@@ -236,3 +236,15 @@ a {
   transition: transform 6s ease-in-out;
   transform: scale(1);
 }
+
+.swiper-pagination-bullet-active {
+  @apply !bg-primary;
+}
+
+.swiper-pagination {
+  @apply !w-16 !ml-4 flex items-center justify-between gap-2;
+}
+
+.swiper-pagination-bullet {
+  @apply cursor-pointer;
+}

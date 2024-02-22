@@ -46,12 +46,12 @@ const PageHead = ({
         >
           <div className="container flex flex-col items-center justify-center">
             {title && (
-              <h1 className="text-2xl mb-4 sm:text-4xl lg:text-5xl max-w-2xl text-center">
+              <h1 className="text-2xl mb-3 sm:text-4xl lg:text-5xl max-w-2xl text-center">
                 {title}
               </h1>
             )}
             {hasBreadCrumb && (
-              <div className="flex gap-2 whitespace-nowrap text-sm lg:text-lg">
+              <div className="flex gap-2 whitespace-nowrap text-sm lg:text-base">
                 <Link href="/" className="flex gap-2 group items-center">
                   <div className="group-hover:text-primary transition-all duration-300">
                     Home
@@ -88,7 +88,7 @@ const PageHead = ({
             )}
 
             {description && (
-              <p className="text-white text-sm sm:text-base lg:text-lg max-w-md mt-6">
+              <p className="text-white text-sm sm:text-base lg:text-base max-w-md mt-6">
                 {description}
               </p>
             )}

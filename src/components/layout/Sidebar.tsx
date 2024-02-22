@@ -128,7 +128,7 @@ const Sidebar = () => {
                 <p
                   className={` font-medium break-all text-sm transition-colors duration-300`}
                 >
-                  {INFO.locationUrl}
+                  {INFO.address}
                 </p>
               </Link>
             </ul>

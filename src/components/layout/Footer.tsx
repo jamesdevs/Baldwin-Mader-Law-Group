@@ -7,6 +7,7 @@ import {
   faLocationDot,
   faMobile,
   faMobileAlt,
+  faPhone,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,19 +23,21 @@ const Footer = () => {
 
       <div className="container">
         <div className="xl:flex grid grid-cols-2 justify-between pt-16 pb-8 text-white gap-12">
-          <div className="sm:max-w-xs col-span-2 xl:max-w-xs flex flex-col">
+          <div className="sm:max-w-xs col-span-2 xl:max-w-sm flex flex-col">
             <Link href="/" className={"py-2 text-white font-bold uppercase"}>
-              (Logo)
+              <Image
+                className="h-12 md:h-14 xl:h-16 aspect-[1002/294]"
+                src="/logo-4.png"
+                alt="logo"
+              />
             </Link>
 
             <p className="mt-1 text-gray-300 text-base">
-              Securities Litigation Law Firm dedicated to recovering investments
-              for defrauded investors. Contact us for a free consultation.
+              we specialize in Securities Litigation, Investment Fraud, Ponzi
+              Schemes, Whistleblowers before the Securities and Exchange
+              Commission, and Elder Financial Fraud.
             </p>
-            <Link
-              href="/contact-us"
-              className="w-fit btn btn-default btn-sm mt-4"
-            >
+            <Link href="/contact" className="btn-after w-fit !text-lg !mt-4">
               Contact Us
             </Link>
           </div>
@@ -46,7 +49,7 @@ const Footer = () => {
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-x-14">
               {navigations.map((item) => (
                 <li
-                  className="mb-4 text-gray-300 linkHover  text-lg hover:text-primary transition-colors duration-300"
+                  className="mb-4 text-gray-300 linkHover text-base hover:text-primary transition-colors duration-300"
                   key={item.title}
                 >
                   <Link href={item.href}>{item.title}</Link>
@@ -60,7 +63,7 @@ const Footer = () => {
               Get In Touch
             </p>
             <ul className="flex gap-0 flex-col">
-              <li className="mb-4 text-gray-300 text-lg">
+              <li className="mb-4 text-gray-300">
                 <Link
                   href={`mailto:${INFO.email}`}
                   className="hover:text-primary transition-colors duration-300 flex gap-2"
@@ -72,24 +75,24 @@ const Footer = () => {
                   {INFO.email}
                 </Link>
               </li>
-              <li className="mb-4 text-gray-300 text-lg">
+              <li className="mb-4 text-gray-300">
                 <Link
                   href={`tel:${formatPhone(INFO.phone)}`}
                   className="hover:text-primary transition-colors duration-300 flex gap-2"
                 >
                   <FontAwesomeIcon
-                    icon={faMobileAlt}
+                    icon={faPhoneVolume}
                     className="w-4 text-primary"
                   />{" "}
                   {INFO.phone}
                 </Link>
               </li>
 
-              <li className="mb-4 text-gray-300 text-lg">
-                <div className="flex gap-2 items-start">
+              <li className="mb-4 text-gray-300">
+                <div className="flex gap-2 items-start max-w-xs">
                   <FontAwesomeIcon
                     icon={faLocationDot}
-                    className="w-4 text-primary inline-flex mt-1"
+                    className="w-4 text-primary inline-flex mt-0.5"
                   />{" "}
                   {INFO.address}
                 </div>

@@ -29,7 +29,7 @@ export default [
       "After a very pleasant call with Pat, I knew he ‘got it’ and then looped in my client to the conversation.",
     quote:
       "I contacted Chris and Pat on behalf of one of my clients. The client, and I, had a concern regarding a private debt investment she had held for many years prior to my association with her. She had been referred to several other attorneys who just did not 'get' what the issue was. I offered to do some interviewing for her. After a very pleasant call with Pat, I knew he 'got it' and then looped in my client to the conversation. Pat and Chris both worked the case with diligence and resolved it very successfully for the client. If you are looking for attorneys who will be forthright with you, to the point, and get the job done - these are your guys.",
-    author: "",
+    author: "G.C.",
   },
   {
     testimonial: "They got the job done.",

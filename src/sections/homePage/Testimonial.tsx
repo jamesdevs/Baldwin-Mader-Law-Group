@@ -1,12 +1,10 @@
+import Image from "@/components/image";
+import Title from "@/components/title";
+import testimonials from "@/constants/testimonials";
+import { faQuoteRight, faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "@/components/image";
-import Link from "next/link";
-import React from "react";
-import testimonials from "@/constants/testimonials";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
-import Title from "@/components/title";
 
 const Testimonial = () => {
   return (
@@ -23,7 +21,7 @@ const Testimonial = () => {
           </div>
           <div className="bg-[rgba(0,0,0,0.6)] inset-0 absolute" />
 
-          <div className="container absolute  -bottom-16 left-1/2 -translate-x-1/2 rounded-xl">
+          <div className="container absolute  -bottom-40 left-1/2 -translate-x-1/2 rounded-xl">
             <Title
               title="Our Testimonials"
               subTitle="What Our Clients Are Saying"
@@ -36,13 +34,13 @@ const Testimonial = () => {
                 spaceBetween={20}
                 slidesPerView={3}
                 autoplay={{
-                  delay: 1000,
+                  delay: 4500,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
                 speed={4500}
                 breakpoints={{
-                  320: {
+                  0: {
                     slidesPerView: 1,
                   },
                   575: {
@@ -69,17 +67,32 @@ const Testimonial = () => {
                     key={i}
                   >
                     <div className="flex justify-center items-center text-center flex-col h-full px-4 py-6 sm:px-6 my-2 sm:py-8">
-                      <p className="max-w-2xl text-lg font-bold mb-4">
-                        {item.testimonial}
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src="/icons/quote.svg"
+                          alt="quote"
+                          className="h-20 w-16"
+                        />
+                      </div>
+                      <p className="max-w-2xl text-2xl font-bold mb-4">
+                        "{item.testimonial}"
                       </p>
                       <p className="max-w-2xl mb-4">{item.quote}</p>
-                      <div className="flex items-center gap-3">
-                        <p className="font-bold">{item.author}</p>
+
+                      <div className="flex flex-col gap-1">
+                        <p className="font-bold text-lg shrink-0">
+                          {item.author}
+                        </p>
+                        {/* <div className="flex">
+                          {new Array(5).fill(0).map((item, index) => (
+                            <FontAwesomeIcon
+                              icon={faStar}
+                              key={index}
+                              className="text-yellow-500 w-4 h-4"
+                            />
+                          ))}
+                        </div> */}
                       </div>
-                      <FontAwesomeIcon
-                        icon={faQuoteRight}
-                        className="absolute top-0 left-1/2 -translate-x-1/2  w-28 text-gray-400 opacity-10"
-                      />
                     </div>
                   </SwiperSlide>
                 ))}

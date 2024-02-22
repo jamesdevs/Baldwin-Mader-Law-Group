@@ -36,7 +36,7 @@ const AttorneyProfilesPage = () => {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 border border-gray-300 rounded-tl-md rounded-br-md transition-all duration-300 group hover:bg-primary hover:border-primary hover:text-gray-900 flex items-start gap-2"
+                        className="text-sm leading-6 text-gray-600 border border-gray-300 rounded-sm transition-all duration-300 group hover:bg-primary hover:border-primary hover:text-gray-900 flex items-start gap-2"
                         target="_blank"
                       >
                         <FontAwesomeIcon
