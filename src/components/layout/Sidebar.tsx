@@ -20,6 +20,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Image from "../image";
+import { cn } from "@/utils";
 
 const CustomSheetClose = (props: any) => {
   return (
@@ -32,24 +34,31 @@ const CustomSheetClose = (props: any) => {
   );
 };
 
-const Sidebar = () => {
+const Sidebar = ({ isScrolled }: any) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
         <FontAwesomeIcon
           icon={faBarsStaggered}
-          className="transition-all duration-300 text-xl cursor-pointer w-6 text-white"
+          className={cn(
+            "transition-all duration-300 text-xl cursor-pointer w-6 text-white",
+            isScrolled && "text-black"
+          )}
         />
       </SheetTrigger>
       <SheetContent className="sheetContent !overflow-auto">
         <SheetHeader className="mt-4">
           <SheetTitle className="text-left">
             <Link href="/" className="py-2 flex items-center gap-1">
-              {INFO.companyName}
+              <Image
+                className="h-12 md:h-14 xl:h-16 aspect-[1002/294] invert-0"
+                src="/logo-4.png"
+                alt="logo"
+              />
             </Link>
           </SheetTitle>
           <SheetDescription className="text-xs text-left max-w-xs inline-flex mx-auto m-0">
-            With over six decades of collective expertise, Baldwin Law Group
+            With over seven decades of collective expertise, Baldwin Law Group
             specializes in recovering millions for defrauded investors. Contact
             us today to explore your options.
           </SheetDescription>

@@ -140,7 +140,7 @@ const Header = ({ topHeader = true }) => {
               ))}
             </div>
             <div className="flex lg:hidden">
-              <Sidebar />
+              <Sidebar isScrolled={isScrolled} />
             </div>
           </nav>
         </header>

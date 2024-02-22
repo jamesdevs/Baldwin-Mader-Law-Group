@@ -1,13 +1,9 @@
 import { INFO } from "@/constants";
 import navigations from "@/constants/navigations";
-import socialLinks from "@/constants/socialLinks";
 import formatPhone from "@/utils/formatPhone";
 import {
   faEnvelope,
   faLocationDot,
-  faMobile,
-  faMobileAlt,
-  faPhone,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,7 +29,7 @@ const Footer = () => {
             </Link>
 
             <p className="mt-1 text-gray-300 text-base">
-              we specialize in Securities Litigation, Investment Fraud, Ponzi
+              We specialize in Securities Litigation, Investment Fraud, Ponzi
               Schemes, Whistleblowers before the Securities and Exchange
               Commission, and Elder Financial Fraud.
             </p>
