@@ -130,6 +130,29 @@ a {
   background: #e4d183 !important;
 }
 
+.title-after {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  color: #fff;
+  padding-bottom: 0;
+}
+
+.title-after::after {
+  height: 7px;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  display: block;
+  margin-top: 0px;
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #2ea8d5 !important;
+  transition: 0.3 all;
+}
+
 .padding-y {
   @apply py-10 sm:py-16 lg:py-[4.5rem];
 }

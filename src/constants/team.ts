@@ -8,11 +8,19 @@ export default [
       {
         institution:
           "Hastings College of the Law, University of California, San Francisco",
-        degree: "JD",
+        degree: "Juris Doctor (JD)",
         year: 1979,
       },
-      { institution: "University of Colorado", degree: "MA", year: 1975 },
-      { institution: "Loyola University of Chicago", degree: "BA", year: 1972 },
+      {
+        institution: "University of Colorado",
+        degree: "Master of Arts (MA)",
+        year: 1975,
+      },
+      {
+        institution: "Loyola University of Chicago",
+        degree: "Bachelor of Arts (BA)",
+        year: 1972,
+      },
     ],
   },
   {
@@ -24,12 +32,12 @@ export default [
       {
         institution:
           "Hastings College of the Law, University of California, San Francisco",
-        degree: "JD",
+        degree: "Juris Doctor (JD)",
         year: 1998,
       },
       {
         institution: "California State University, Chico",
-        degree: "BA",
+        degree: "Bachelor of Arts (BA)",
         year: 1994,
       },
     ],
