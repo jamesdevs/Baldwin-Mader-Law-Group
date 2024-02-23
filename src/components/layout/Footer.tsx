@@ -33,7 +33,7 @@ const Footer = () => {
               Schemes, Whistleblowers before the Securities and Exchange
               Commission, and Elder Financial Fraud.
             </p>
-            <Link href="/contact" className="btn-after w-fit !text-lg !mt-4">
+            <Link href="/contact-us" className="btn-after w-fit !text-lg !mt-4">
               Contact Us
             </Link>
           </div>

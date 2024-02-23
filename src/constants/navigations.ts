@@ -22,6 +22,12 @@ export default [
     href: "/client-reviews",
   },
 
+  {
+    id: "contact-us",
+    title: "Contact",
+    href: "/contact-us",
+  },
+
   // {
   //   id: "current-investigations",
   //   title: "Current Investigations",

@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import axios from "axios";
-import { useForm } from "react-hook-form";
 import Input from "@/components/input";
-import Select from "@/components/select";
 import { useToast } from "@/components/ui/use-toast";
-import services from "@/constants/services";
+import { yupResolver } from "@hookform/resolvers/yup";
+import axios from "axios";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 type FormData = {
   name: string;
@@ -20,7 +18,7 @@ const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
   email: yup.string().email("Invalid email").required("Email is required"),
   phoneNumber: yup.string().required("Phone number is required"),
-  service: yup.string().required("Please select one option"),
+  subject: yup.string().required("Subject is required."),
   message: yup.string(),
 });
 const ContactInner = () => {
@@ -41,12 +39,11 @@ const ContactInner = () => {
     setIsLoading(true);
 
     try {
-      const { name, email, phoneNumber, message, service } = data;
+      const { name, email, phoneNumber, message, subject } = data;
 
       const formData = new FormData();
-      formData.set("your-subject", `New client: ${name} - ${service}`);
+      formData.set("your-subject", subject);
       formData.set("your-name", `${name}`);
-      formData.set("service", `${service}`);
       formData.set("your-email", email);
       formData.set("phone", phoneNumber);
       formData.set("your-message", message);
@@ -64,7 +61,6 @@ const ContactInner = () => {
           className: "bg-green-400 text-white",
         });
         reset();
-        setValue("service", "");
       }
     } catch (error) {
       toast({
@@ -91,24 +87,6 @@ const ContactInner = () => {
           {...register("name")}
           required
         />
-        <Select
-          options={[
-            {
-              value: "",
-              label: "Please select an option",
-            },
-            ...services.map((item) => ({
-              value: item.title,
-              label: item.title,
-            })),
-          ]}
-          {...register("service")}
-          error={errors.service}
-          id="service"
-          label="How Can We Help You?"
-          placeholder="Please select"
-          required
-        />
         <Input
           id="phoneNumber"
           label="Phone Number"
@@ -123,6 +101,13 @@ const ContactInner = () => {
           label="Email"
           {...register("email")}
           error={errors.email}
+          required
+        />
+        <Input
+          id="subject"
+          label="Subject"
+          {...register("subject")}
+          error={errors.subject}
           required
         />
         <Input

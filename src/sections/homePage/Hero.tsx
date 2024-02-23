@@ -116,7 +116,7 @@ const Hero = () => {
                 variants={motionVariants.fadeUp(40)}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link href="/contact" className="btn-after">
+                <Link href="/contact-us" className="btn-after">
                   Contact Us
                 </Link>
               </motion.div>

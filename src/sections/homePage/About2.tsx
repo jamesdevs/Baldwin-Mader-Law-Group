@@ -49,7 +49,7 @@ const About2 = () => {
             </p>
 
             <div className="flex gap-2 sm:gap-4 flex-wrap">
-              <Link href="/contact" className="btn-after !text-black">
+              <Link href="/contact-us" className="btn-after !text-black">
                 Contact Us
               </Link>
             </div>
