@@ -17,13 +17,13 @@ const AttorneyProfilesPage = () => {
       <section className="padding-y">
         <div className="container flex flex-col">
           {team.map((item) => (
-            <div className="grid md:grid-cols-12 gap-10 border-b border-gray-200 pb-14 mb-14 last-of-type:mb-0 last-of-type:pb-10 last-of-type:border-none">
-              <div className="md:col-span-5 lg:col-span-4">
-                <div className="flex flex-col items-center  sm:flex-row md:flex-col gap-4">
+            <div className="grid md:grid-cols-12 gap-6 lg:gap-10 border-b border-gray-200 pb-14 mb-14 last-of-type:mb-0 last-of-type:pb-10 last-of-type:border-none">
+              <div className=" md:col-span-5 lg:col-span-4">
+                <div className="flex flex-col flex-wrap  lg:items-start xs:flex-row md:flex-col gap-4">
                   <Image
                     src={item.imgSrc}
                     alt={item.name}
-                    className="h-full sm:w-1/2 md:w-full min-h-[20rem] lg:min-h-[24rem] overflow-hidden rounded-sm"
+                    className="h-full max-sm:min-w-[16rem] xs:w-1/2 md:w-full min-h-[20rem] lg:min-h-[24rem] overflow-hidden rounded-sm"
                     imageClassName="object-cover object-top"
                   />
                   <div className="flex flex-col">
@@ -48,7 +48,7 @@ const AttorneyProfilesPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:col-span-7 lg:col-span-8 flex flex-col gap-10">
+              <div className=" md:col-span-7 lg:col-span-8 flex flex-col gap-10">
                 <div>
                   <h2 className="text-3xl mb-4 title-after !text-black">
                     Education
