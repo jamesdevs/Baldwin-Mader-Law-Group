@@ -29,18 +29,18 @@ const About = () => {
           <div className="flex w-full relative mx-auto max-w-xl min-h-[250px] sm:min-h-[350px]">
             <div className="flex w-full whitespace-nowrap relative">
               <p className="font-archivo text-center h-max font-bold text-lg lg:text-2xl text-[#2F373D] absolute top-0 left-0 sm:relative sm:-rotate-90 mt-14 lg:mt-20">
-                <span className="text-5xl lg:text-8xl">70</span> <br />
+                <span className="text-5xl lg:text-8xl">+70</span> <br />
                 Years Experience
               </p>
               <Image
-                src="/images/about/image-8.jpg"
+                src="/images/about/image-12.jpg"
                 alt="about"
                 className="h-full w-full min-h-[200px]"
                 imageClassName="object-cover"
               />
             </div>
             <Image
-              src="/images/about/image-7.jpg"
+              src="/images/hero/test-2.jpg"
               alt="about"
               className="h-[72%] w-7/12 !absolute -bottom-32 border-8 border-white sm:block hidden"
               imageClassName="object-cover"

@@ -22,8 +22,9 @@ const Footer = () => {
           <div className="sm:max-w-xs col-span-2 xl:max-w-sm flex flex-col">
             <Link href="/" className={"py-2 text-white font-bold uppercase"}>
               <Image
-                className="h-12 md:h-14 xl:h-16 aspect-[1002/294]"
-                src="/logo-4.png"
+                className="h-10 xl:h-12 aspect-[500/134]"
+                imageClassName={"invert"}
+                src="/logo5.png"
                 alt="logo"
               />
             </Link>

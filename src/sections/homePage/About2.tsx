@@ -57,7 +57,7 @@ const About2 = () => {
           <div className="flex w-full relative mx-auto max-w-xl min-h-[250px] sm:min-h-[350px] order-1 lg:order-2">
             <div className="flex w-full whitespace-nowrap relative">
               <Image
-                src="/images/about/image-10.jpg"
+                src="/images/hero/image-2.png"
                 alt="about"
                 className="h-full w-full min-h-[200px]"
                 imageClassName="object-cover"

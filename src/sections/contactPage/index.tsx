@@ -47,8 +47,8 @@ const ContactPage = () => {
           >
             <Title title="Get in touch" subTitle="NEED ANY HELP?" />
             <p className="text-lg">
-              With over seven decades of collective expertise, Baldwin Law Group
-              specializes in recovering millions for defrauded investors.
+              With over seven decades of collective expertise, Baldwin Mader Law
+              Group specializes in recovering millions for defrauded investors.
               Contact us today to explore your options.
             </p>
 

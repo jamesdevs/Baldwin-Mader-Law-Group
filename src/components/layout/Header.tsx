@@ -117,9 +117,9 @@ const Header = ({ topHeader = true }) => {
                 )}
               >
                 <Image
-                  className="h-12 md:h-14 xl:h-16 aspect-[1002/294]"
-                  imageClassName={cn(isScrolled && "invert")}
-                  src="/logo-4.png"
+                  className="h-10 xl:h-12 aspect-[500/134]"
+                  imageClassName={cn(!isScrolled && "invert")}
+                  src="/logo5.png"
                   alt="logo"
                 />
               </Link>

@@ -1,7 +1,7 @@
 export const INFO = {
   phone: "(310) 363-2031",
   email: "cmader@baldwinlawgroup.com",
-  address: "530 Oak Grove Ave #206, Menlo Park, CA 94025",
+  address: "516 North Sepulveda Boulevard, Manhattan Beach, CA 90266",
   companyName: "Baldwin Mader Law Group",
   site: "https://www.baldwinlawgroup.com",
   locationUrl: "",
@@ -10,7 +10,7 @@ export const INFO = {
 };
 
 export const MetaData = {
-  title: "Baldwin Law Group | Your Trusted Securities Litigation Partner",
+  title: "Baldwin Mader Law Group | Your Trusted Securities Litigation Partner",
   description:
-    "With over seven decades of collective expertise, Baldwin Law Group specializes in recovering millions for defrauded investors. Contact us today to explore your options.",
+    "With over seven decades of collective expertise, Baldwin Mader Law Group specializes in recovering millions for defrauded investors. Contact us today to explore your options.",
 };

@@ -33,7 +33,7 @@ const BacktoTop = () => {
       {showArrow && (
         <FontAwesomeIcon
           icon={faChevronUp}
-          className="fixed bottom-3 right-3 w-10 p-1.5 cursor-pointer rounded-sm text-white bg-primary"
+          className="fixed bottom-3 right-3 w-10 p-1.5 z-10 cursor-pointer rounded-sm text-white bg-primary"
           onClick={handleToTop}
         />
       )}

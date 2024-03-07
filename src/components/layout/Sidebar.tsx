@@ -49,18 +49,18 @@ const Sidebar = ({ isScrolled }: any) => {
       <SheetContent className="sheetContent !overflow-auto">
         <SheetHeader className="mt-4">
           <SheetTitle className="text-left">
-            <Link href="/" className="py-2 flex items-center gap-1">
+            <Link href="/" className="flex items-center gap-1">
               <Image
-                className="h-14 aspect-[1002/294] invert"
-                src="/logo-4.png"
+                className="h-10 xl:h-12 aspect-[500/134]"
+                src="/logo5.png"
                 alt="logo"
               />
             </Link>
           </SheetTitle>
           <SheetDescription className="text-xs text-left max-w-xs inline-flex mx-auto m-0">
-            With over seven decades of collective expertise, Baldwin Law Group
-            specializes in recovering millions for defrauded investors. Contact
-            us today to explore your options.
+            With over seven decades of collective expertise, Baldwin Mader Law
+            Group specializes in recovering millions for defrauded investors.
+            Contact us today to explore your options.
           </SheetDescription>
         </SheetHeader>
         <CustomSheetClose />

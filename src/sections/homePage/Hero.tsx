@@ -1,17 +1,15 @@
 import Image from "@/components/image";
 import motionVariants from "@/utils/motionVariants";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const heroSliderImages = [
-  "/images/hero/test-1.jpg",
-  "/images/hero/test-2.jpg",
-  "/images/hero/test-3.jpg",
+  "/images/hero/image-16.jpg",
+  "/images/hero/image-1.png",
   "/images/hero/test-4.jpg",
-  "/images/hero/test-5.jpg",
+  "/images/hero/image-14.jpg",
 ];
 const Hero = () => {
   const [activeSlide, setActiveSlide] = useState(-1);
@@ -59,7 +57,7 @@ const Hero = () => {
                 }`}
                 imageClassName="object-cover"
               />
-              <div className="absolute left-0 top-0 bottom-0 z-10 w-full bg-gradient-to-br from-[rgba(0,0,0,0.6)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]" />
+              <div className="absolute left-0 top-0 bottom-0 z-10 w-full bg-gradient-to-br from-[rgba(0,0,0,0.5)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -67,7 +65,7 @@ const Hero = () => {
         <div className="container z-10 relative h-full flex flex-col justify-center flex-1">
           <div className="max-w-4xl mt-[60px]">
             <div className="text-center sm:text-left max-w-xl">
-              <motion.p
+              {/* <motion.p
                 className="text-white tracking-widest text-lg"
                 initial="initial"
                 whileInView="animate"
@@ -78,7 +76,7 @@ const Hero = () => {
               >
                 Investment Fraud Lawyers
                 <br className="sm:block hidden" />
-              </motion.p>
+              </motion.p> */}
 
               <motion.h1
                 className="text-gray-200 mt-4"
@@ -107,7 +105,7 @@ const Hero = () => {
                 Securities and Exchange Commission &amp; Elder Financial Fraud.
               </motion.p>
 
-              <motion.div
+              {/* <motion.div
                 className="mt-6 flex flex-wrap justify-center sm:justify-start items-center gap-y-6 gap-x-10"
                 initial="initial"
                 whileInView="animate"
@@ -119,7 +117,7 @@ const Hero = () => {
                 <Link href="/contact-us" className="btn-after">
                   Contact Us
                 </Link>
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
         </div>
