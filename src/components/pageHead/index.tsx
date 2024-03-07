@@ -32,12 +32,13 @@ const PageHead = ({
         )}
       >
         <Image
-          src={"/images/hero/image-13.png"}
+          src={"/images/hero/image-1.png"}
+          // src={"/images/hero/image-13.png"}
           alt="bg-hero"
           className=" !absolute inset-0 -z-10 w-full"
           imageClassName="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[rgba(0,0,0,0.3)]" />
+        <div className="absolute left-0 top-0 bottom-0 z-10 w-full bg-gradient-to-br from-[rgba(0,0,0,0.5)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]" />
         <div
           className={cn(
             "relative z-10 text-white text-lg pb-10 pt-36 sm:pb-16 sm:pt-48 ",

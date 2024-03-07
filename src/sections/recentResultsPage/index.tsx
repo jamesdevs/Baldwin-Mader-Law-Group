@@ -1,5 +1,7 @@
 import PageHead from "@/components/pageHead";
 import results from "@/constants/results";
+import motionVariants from "@/utils/motionVariants";
+import { motion } from "framer-motion";
 
 const RecentResultsPage = () => {
   return (
@@ -12,7 +14,15 @@ const RecentResultsPage = () => {
 
       <section className="padding-y">
         <div className="container">
-          <div className="flex-col flex-wrap justify-start sm:grid sm:gap-y-0 xl:flex xl:flex-row">
+          <motion.div
+            className="flex-col flex-wrap justify-start sm:grid sm:gap-y-0 xl:flex xl:flex-row"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            exit="exit"
+            variants={motionVariants.fadeUp(40)}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             {results.map((result, index) => (
               <div
                 className="px-8 pb-8 pt-10 w-full text-gray-900 border-t border-gray-200 flex flex-col lg:flex-row items-stretch last-of-type:border-b"
@@ -32,7 +42,7 @@ const RecentResultsPage = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

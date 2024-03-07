@@ -6,10 +6,14 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const heroSliderImages = [
-  "/images/hero/image-16.jpg",
+  "/images/hero/image-20.jpg",
   "/images/hero/image-1.png",
   "/images/hero/test-4.jpg",
-  "/images/hero/image-14.jpg",
+  // "/images/hero/image-14.jpg",
+  "/images/hero/image-18.jpg",
+  "/images/hero/image-19.jpg",
+  // "/images/hero/image-21.jpg",
+  // "/images/hero/image-22.jpg",
 ];
 const Hero = () => {
   const [activeSlide, setActiveSlide] = useState(-1);

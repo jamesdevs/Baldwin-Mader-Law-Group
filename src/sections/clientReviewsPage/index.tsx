@@ -3,6 +3,8 @@ import PageHead from "@/components/pageHead";
 import testimonials from "@/constants/testimonials";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import motionVariants from "@/utils/motionVariants";
+import { motion } from "framer-motion";
 
 const ClientReviewsPage = () => {
   return (
@@ -13,7 +15,15 @@ const ClientReviewsPage = () => {
         hasBreadCrumb
       />
       <section className="padding-y">
-        <div className="container">
+        <motion.div
+          className="container"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          exit="exit"
+          variants={motionVariants.fadeUp(40)}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-2">
             {testimonials.map((testimonial, index) => (
               <div
@@ -50,7 +60,7 @@ const ClientReviewsPage = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

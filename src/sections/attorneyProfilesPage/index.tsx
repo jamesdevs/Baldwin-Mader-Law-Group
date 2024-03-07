@@ -4,6 +4,8 @@ import socialLinks from "@/constants/socialLinks";
 import team from "@/constants/team";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import motionVariants from "@/utils/motionVariants";
+import { motion } from "framer-motion";
 
 const AttorneyProfilesPage = () => {
   return (
@@ -15,7 +17,15 @@ const AttorneyProfilesPage = () => {
       />
 
       <section className="padding-y">
-        <div className="container flex flex-col">
+        <motion.div
+          className="container flex flex-col"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          exit="exit"
+          variants={motionVariants.fadeUp(40)}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           {team.map((item) => (
             <div className="grid md:grid-cols-12 gap-6 lg:gap-10 border-b border-gray-200 pb-14 mb-14 last-of-type:mb-0 last-of-type:pb-10 last-of-type:border-none">
               <div className=" md:col-span-5 lg:col-span-4">
@@ -75,7 +85,7 @@ const AttorneyProfilesPage = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </section>
     </>
   );

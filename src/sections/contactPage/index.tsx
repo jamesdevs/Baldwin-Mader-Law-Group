@@ -115,9 +115,11 @@ const ContactPage = () => {
                     </p>
 
                     <p
-                      className={`font-medium break-all text-base lg:text-lg transition-colors duration-300`}
+                      className={`font-medium break-all text-base lg:text-lg text-gray-500 transition-colors duration-300`}
                     >
-                      {INFO.address}
+                      {INFO.address.split(",")[0]}
+                      <br />
+                      {INFO.address.split(",").slice(1).join(",")}
                     </p>
                   </div>
                 </div>
