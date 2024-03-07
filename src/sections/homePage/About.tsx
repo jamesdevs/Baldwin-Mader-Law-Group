@@ -40,7 +40,7 @@ const About = () => {
               />
             </div>
             <Image
-              src="/images/about/image-13.jpeg"
+              src="/images/about/image-14.jpeg"
               alt="about"
               className="h-[72%] w-7/12 !absolute -bottom-32 border-8 border-white sm:block hidden"
               imageClassName="object-cover"
