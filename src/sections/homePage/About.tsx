@@ -33,7 +33,7 @@ const About = () => {
                 Years Experience
               </p>
               <Image
-                src="/images/about/image-12.jpg"
+                src="/images/about/image-16.jpg"
                 alt="about"
                 className="h-full w-full min-h-[200px]"
                 imageClassName="object-cover"
