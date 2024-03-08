@@ -1,23 +1,14 @@
-import {
-  faFacebook,
-  faInstagram,
-  faYelp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default [
   {
     name: "Facebook",
-    href: "",
+    href: "https://m.facebook.com/p/Baldwin-Mader-Law-Group-100070240384711",
     icon: faFacebook,
   },
   {
-    name: "Instagram",
-    href: "",
-    icon: faInstagram,
-  },
-  {
-    name: "Yelp",
-    href: "",
-    icon: faYelp,
+    name: "Twitter",
+    href: "https://twitter.com/baldwin_mader",
+    icon: faTwitter,
   },
 ];

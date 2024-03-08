@@ -17,8 +17,8 @@ type SEOProps = {
 const SEO = ({
   title = MetaData.title,
   description = MetaData.description,
-  twitter = { handle: "@tsm", site: INFO.site },
-  openGraphImageURl = "/og.jpg",
+  twitter = { handle: "@baldwin_mader", site: INFO.site },
+  openGraphImageURl = "/og.png",
   ...rest
 }: SEOProps) => {
   const router = useRouter();
@@ -28,7 +28,7 @@ const SEO = ({
       description={description}
       canonical={INFO.site + router.pathname}
       facebook={{
-        appId: "tsm",
+        appId: "100070240384711",
       }}
       openGraph={{
         url: INFO.site + router.pathname,
@@ -38,8 +38,8 @@ const SEO = ({
         images: [
           {
             url: INFO.site + openGraphImageURl,
-            width: 1080,
-            height: 1080,
+            width: 566,
+            height: 200,
             alt: "logo",
           },
         ],
