@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -22,6 +22,10 @@ export default function Document() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta
+          name="google-site-verification"
+          content="3pkv46WDH4Zjot7zCau-u5G5HMmDQvqPp4Jg5_jAfF0"
+        />
       </Head>
       <body>
         <Main />

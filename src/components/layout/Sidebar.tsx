@@ -6,22 +6,23 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
-import { INFO } from "@/constants";
-import navigations from "@/constants/navigations";
-import socialLinks from "@/constants/socialLinks";
-import formatPhone from "@/utils/formatPhone";
+} from '@/components/ui/sheet';
+import { INFO } from '@/constants';
+import navigations from '@/constants/navigations';
+import socialLinks from '@/constants/socialLinks';
+import formatPhone from '@/utils/formatPhone';
 import {
+  faBars,
   faBarsStaggered,
   faClose,
   faEnvelope,
   faLocationDot,
   faPhoneVolume,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import Image from "../image";
-import { cn } from "@/utils";
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import Image from '../image';
+import { cn } from '@/utils';
 
 const CustomSheetClose = (props: any) => {
   return (
@@ -39,10 +40,10 @@ const Sidebar = ({ isScrolled }: any) => {
     <Sheet>
       <SheetTrigger asChild>
         <FontAwesomeIcon
-          icon={faBarsStaggered}
+          icon={faBars}
           className={cn(
-            "transition-all duration-300 text-xl cursor-pointer w-6 text-white",
-            isScrolled && "text-black"
+            'transition-all duration-300 text-xl cursor-pointer w-6 text-white',
+            isScrolled && 'text-black'
           )}
         />
       </SheetTrigger>
@@ -57,7 +58,7 @@ const Sidebar = ({ isScrolled }: any) => {
               />
             </Link>
           </SheetTitle>
-          <SheetDescription className="text-xs text-left max-w-xs inline-flex mx-auto m-0">
+          <SheetDescription className="text-xs md:text-sm text-left max-w-xs inline-flex mx-auto m-0">
             With over seven decades of collective expertise, Baldwin Mader Law
             Group specializes in recovering millions for defrauded investors.
             Contact us today to explore your options.
@@ -71,8 +72,7 @@ const Sidebar = ({ isScrolled }: any) => {
             <Link
               key={item.id}
               href={item.href}
-              className="text-sm font-normal leading-6 text-gray-900"
-            >
+              className="text-sm font-normal leading-6 text-gray-900">
               {item.title}
             </Link>
           ))}
@@ -84,19 +84,16 @@ const Sidebar = ({ isScrolled }: any) => {
               <Link
                 href={`tel:${formatPhone(INFO.phone)}`}
                 className="flex items-center gap-2 group"
-                target="_blank"
-              >
+                target="_blank">
                 <div
-                  className={`inline-flex font-bold items-center text-sm gap-2 justify-center`}
-                >
+                  className={`inline-flex font-bold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
                     icon={faPhoneVolume}
                     className="w-4 text-primary shrink-0"
                   />
                 </div>
                 <p
-                  className={` font-medium break-all text-sm transition-colors duration-300`}
-                >
+                  className={` font-medium break-all text-sm transition-colors duration-300`}>
                   {INFO.phone}
                 </p>
               </Link>
@@ -104,19 +101,16 @@ const Sidebar = ({ isScrolled }: any) => {
               <Link
                 href={`mailto:${INFO.email}`}
                 className="flex items-center gap-2 group"
-                target="_blank"
-              >
+                target="_blank">
                 <div
-                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}
-                >
+                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="w-4 text-primary shrink-0"
                   />
                 </div>
                 <p
-                  className={` font-medium break-all text-sm transition-colors duration-300`}
-                >
+                  className={` font-medium break-all text-sm transition-colors duration-300`}>
                   {INFO.email}
                 </p>
               </Link>
@@ -124,19 +118,16 @@ const Sidebar = ({ isScrolled }: any) => {
               <Link
                 href={INFO.locationUrl}
                 className="flex items-center gap-2 group"
-                target="_blank"
-              >
+                target="_blank">
                 <div
-                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}
-                >
+                  className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     className="w-4 text-primary shrink-0"
                   />
                 </div>
                 <p
-                  className={` font-medium break-all text-sm transition-colors duration-300`}
-                >
+                  className={` font-medium break-all text-sm transition-colors duration-300`}>
                   {INFO.address}
                 </p>
               </Link>
@@ -149,8 +140,7 @@ const Sidebar = ({ isScrolled }: any) => {
                 key={item.name}
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900 flex items-start gap-2"
-                target="_blank"
-              >
+                target="_blank">
                 <FontAwesomeIcon
                   icon={item.icon}
                   className="w-8 h-8 text-gray-500 border border-gray-300 p-1.5"
