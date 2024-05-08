@@ -1,8 +1,8 @@
-import Image from "@/components/image";
-import Title from "@/components/title";
-import motionVariants from "@/utils/motionVariants";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import Image from '@/components/image';
+import Title from '@/components/title';
+import motionVariants from '@/utils/motionVariants';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const About2 = () => {
   return (
@@ -16,8 +16,7 @@ const About2 = () => {
             viewport={{ once: true }}
             exit="exit"
             variants={motionVariants.fadeUp(40)}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            transition={{ duration: 0.5, delay: 0.2 }}>
             <Title
               title="Baldwin Mader Law Group's Mission"
               subTitle="Get to Know Us"
@@ -31,16 +30,13 @@ const About2 = () => {
             </p>
 
             <p className="mb-4 relative before:absolute before:left-0 before:h-full before:w-[2px] before:bg-primary pl-4 ml-6">
-              <span className="font-bold">We have only one mission:</span> To
-              help victims of financial fraud recover their losses. Baldwin
-              Mader Law Group has been involved in hundreds of cases at FINRA,
-              District Courts nationwide and other forums. When you hire our
-              team, you are represented by the firm’s principals, not an
+              Baldwin Mader Law Group has been involved in hundreds of cases at
+              FINRA, District Courts nationwide and other forums. When you hire
+              our team, you are represented by the firm’s principals, not an
               inexperienced associate.
             </p>
 
             <p className="mb-4">
-              Securities transactions are often difficult to analyze.
               Determining whether you have been the victim of Investment fraud,
               securities fraud or financial elder abuse is daunting. You are
               welcome to contact us for a consultation. When you call, you will

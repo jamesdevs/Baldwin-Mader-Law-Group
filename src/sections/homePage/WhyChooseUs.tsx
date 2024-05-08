@@ -1,15 +1,15 @@
-import Image from "@/components/image";
-import Title from "@/components/title";
-import stats from "@/constants/stats";
-import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import Image from '@/components/image';
+import Title from '@/components/title';
+import stats from '@/constants/stats';
+import { useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 const WhyChooseUs = () => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["1 1", "0 1"],
+    offset: ['1 1', '0 1'],
   });
 
   const distance = useTransform(scrollYProgress, [0, 0.5], [1.3, 1]);
@@ -28,22 +28,21 @@ const WhyChooseUs = () => {
       </div>
       <div className="absolute left-0 top-0 bottom-0 z-10 w-full bg-gradient-to-br from-[rgba(0,0,0,0.65)] via-[rgba(0,0,0,0.4)] to-transparent" />
 
-      <div className="container grid lg:grid-cols-2 relative z-10 lg:items-center">
-        <div className="flex flex-col max-lg:text-center max-lg:items-center">
+      <div className="container grid lg:grid-cols-1 relative z-10 lg:items-center">
+        <div className="flex flex-col max-lg:text-center max-lg:items-center items-center">
           <Title
             title="Why Choose Us?"
-            subTitle="Expert Securities Litigation & Fraud Recovery"
             white
             className="items-center lg:items-start"
           />
 
-          <p className="text-gray-100 text-lg max-w-lg">
+          <p className="text-gray-100 text-lg max-w-lg text-center">
             With over 70 years of combined experience, we've recovered millions
             for victims nationwide. Trust our seasoned team to fight for you and
             recover your losses.
           </p>
         </div>
-        <div className="flex justify-center flex-wrap max-sm:gap-10 lg:grid lg:grid-cols-3 lg:gap-5  max-lg:gap-20 max-lg:mt-14">
+        {/* <div className="flex justify-center flex-wrap max-sm:gap-10 lg:grid lg:grid-cols-3 lg:gap-5  max-lg:gap-20 max-lg:mt-14">
           {stats.map((stat, index) => (
             <div className="flex flex-col items-center gap-5">
               <div className="w-16 lg:w-20 h-16 lg:h-20 rounded-full flex justify-center items-center">
@@ -60,7 +59,7 @@ const WhyChooseUs = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
