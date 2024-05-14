@@ -21,12 +21,16 @@ export default [
     title: "Client Reviews",
     href: "/client-reviews",
   },
-
+  {
+    id: "securities-litigation-attorney",
+    title: "Securities Litigation Attorney",
+    href: "/securities-litigation-attorney",
+  },
   {
     id: "contact-us",
     title: "Contact",
     href: "/contact-us",
-  },
+  }
 
   // {
   //   id: "current-investigations",

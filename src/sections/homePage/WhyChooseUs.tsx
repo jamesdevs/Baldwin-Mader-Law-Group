@@ -37,9 +37,8 @@ const WhyChooseUs = () => {
           />
 
           <p className="text-gray-100 text-lg max-w-lg text-center">
-            With over 70 years of combined experience, we've recovered millions
-            for victims nationwide. Trust our seasoned team to fight for you and
-            recover your losses.
+          With over 70 years of combined experience, Baldwin Mader Law Group recovered millions for victims 
+nationwide. Trust our seasoned team to fight for you and recover your investment losses.
           </p>
         </div>
         {/* <div className="flex justify-center flex-wrap max-sm:gap-10 lg:grid lg:grid-cols-3 lg:gap-5  max-lg:gap-20 max-lg:mt-14">

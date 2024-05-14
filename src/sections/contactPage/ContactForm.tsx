@@ -120,7 +120,7 @@ const ContactInner = () => {
           textarea
           rows={5}
         />{" "}
-        <button type="submit" className="btn btn-primary w-fit min-w-[10rem]">
+        <button type="submit" className="btn btn-primary formSubmit w-fit min-w-[10rem]">
           {isLoading ? "Submit..." : "Submit"}
         </button>
       </div>

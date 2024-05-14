@@ -57,15 +57,10 @@ const About = () => {
           >
             <Title
               title="Representing victims of investment fraud"
-              subTitle="About Us"
+              subTitle="About Baldwin Mader Law Group"
             />
             <p className="mb-6">
-              With over 70 years of combined experience, our investment fraud
-              lawyers have recovered millions of dollars in hundreds of cases on
-              behalf of individuals and institutions. Having handled over 600
-              cases involving virtually every type of investment fraud, our
-              experience is unparalleled.
-            </p>
+            With over 70 years of combined experience, we have recovered millions of dollars in hundreds of cases on behalf of individuals and institutions. Having handled over 600 cases involving virtually every type of investment fraud, our experience is unparalleled. When you partner with Baldwin Mader Law Group, you are protected by: </p>
 
             <ul className="mb-6 grid sm:grid-cols-2 gap-x-4 gap-y-2 ml-3">
               {features.map((item) => (
@@ -81,9 +76,9 @@ const About = () => {
               ))}
             </ul>
             <p className="mb-6">
-              We have uncovered major financial and securities fraud nationwide.
-              Our results tell our story. Baldwin Mader Law Group has offices in
-              San Francisco, Los Angeles, and Palm Springs.
+              We have uncovered major financial and securities fraud nationwide. Our results tell our story.
+              Among the top securities law firms in California, Baldwin Mader Law Group has offices in San Francisco, Los Angeles, and Palm Springs.
+
             </p>
 
             <div className="flex gap-2 sm:gap-4 flex-wrap">

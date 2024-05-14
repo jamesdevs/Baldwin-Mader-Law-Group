@@ -41,7 +41,7 @@ const Header = ({ topHeader = true }) => {
                 <Link
                   href={`tel:${formatPhone(INFO.phone)}`}
                   className="flex items-center gap-2 group"
-                  target="_blank">
+                  target="_blank" rel='noreferrer'>
                   <span>
                     <FontAwesomeIcon
                       icon={faPhoneSquare}
@@ -61,7 +61,7 @@ const Header = ({ topHeader = true }) => {
                 <Link
                   href={`mailto:${INFO.email}`}
                   className="flex items-center gap-2 group"
-                  target="_blank">
+                  target="_blank" rel='noreferrer'>
                   <span>
                     <FontAwesomeIcon
                       icon={faEnvelopeSquare}
@@ -71,7 +71,7 @@ const Header = ({ topHeader = true }) => {
                   <div className="flex flex-col">
                     <p
                       className={`text-white text-base group-hover:text-primary transition-colors duration-300 leading-tight`}>
-                      {INFO.email}
+                      Email Us Here
                     </p>
                   </div>
                 </Link>
@@ -83,7 +83,7 @@ const Header = ({ topHeader = true }) => {
                   key={item.name}
                   href={item.href}
                   className="text-sm leading-6 flex items-start gap-2"
-                  target="_blank">
+                  target="_blank" rel='noreferrer'>
                   <FontAwesomeIcon
                     icon={item.icon}
                     className="w-[1.9rem] h-[1.9rem] text-white hover:text-primary duration-300 transition-all rounded-full p-1.5"

@@ -84,7 +84,7 @@ const Sidebar = ({ isScrolled }: any) => {
               <Link
                 href={`tel:${formatPhone(INFO.phone)}`}
                 className="flex items-center gap-2 group"
-                target="_blank">
+                target="_blank" rel='noreferrer'>
                 <div
                   className={`inline-flex font-bold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
@@ -101,7 +101,7 @@ const Sidebar = ({ isScrolled }: any) => {
               <Link
                 href={`mailto:${INFO.email}`}
                 className="flex items-center gap-2 group"
-                target="_blank">
+                target="_blank" rel='noreferrer'>
                 <div
                   className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
@@ -111,14 +111,14 @@ const Sidebar = ({ isScrolled }: any) => {
                 </div>
                 <p
                   className={` font-medium break-all text-sm transition-colors duration-300`}>
-                  {INFO.email}
+                  Email Us Here
                 </p>
               </Link>
 
               <Link
                 href={INFO.locationUrl}
                 className="flex items-center gap-2 group"
-                target="_blank">
+                target="_blank" rel='noreferrer'>
                 <div
                   className={`inline-flex font-semibold items-center text-sm gap-2 justify-center`}>
                   <FontAwesomeIcon
@@ -140,7 +140,7 @@ const Sidebar = ({ isScrolled }: any) => {
                 key={item.name}
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900 flex items-start gap-2"
-                target="_blank">
+                target="_blank" rel='noreferrer'>
                 <FontAwesomeIcon
                   icon={item.icon}
                   className="w-8 h-8 text-gray-500 border border-gray-300 p-1.5"

@@ -22,26 +22,22 @@ const About2 = () => {
               subTitle="Get to Know Us"
             />
             <p className="mb-4">
-              Patrick Baldwin, our founder, was an attorney at the SEC in
-              Washington, D.C., Divisions of Marketing Regulation and Division
-              of Corporation Finance. Christopher Mader was formerly a
-              registered representative who worked at a major national broker
-              dealers.
+              Patrick Baldwin, was an attorney at the SEC in Washington, D.C., Divisions of Marketing 
+Regulation and Division of Corporation Finance. Christopher Mader was formerly a FINRA registered 
+representative at a major national broker dealer.
             </p>
 
             <p className="mb-4 relative before:absolute before:left-0 before:h-full before:w-[2px] before:bg-primary pl-4 ml-6">
-              Baldwin Mader Law Group has been involved in hundreds of cases at
-              FINRA, District Courts nationwide and other forums. When you hire
-              our team, you are represented by the firm’s principals, not an
-              inexperienced associate.
+              <b>We have only one mission :</b>To help victims of financial fraud recover their losses. Baldwin Mader Law 
+Group has been involved in hundreds of cases at FINRA, District Courts nationwide and other forums. 
+When you hire our team, you are represented by the firm’s principals, not an inexperienced associate.
+
             </p>
 
             <p className="mb-4">
-              Determining whether you have been the victim of Investment fraud,
-              securities fraud or financial elder abuse is daunting. You are
-              welcome to contact us for a consultation. When you call, you will
-              talk to a partner at the firm, not a non-lawyer administrative
-              person.
+            Securities transactions are often difficult to analyze. Determining whether you have been the victim of Iinvestment fraud, securities fraud or financial elder abuse is daunting. You are welcome to contact us 
+for a consultation. When you call, you will talk to a partner of one of the leading securities 
+law firms in California 
             </p>
 
             <div className="flex gap-2 sm:gap-4 flex-wrap">

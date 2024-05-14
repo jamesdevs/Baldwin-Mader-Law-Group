@@ -69,7 +69,7 @@ const Footer = () => {
                     icon={faEnvelope}
                     className="w-4 text-primary"
                   />{" "}
-                  {INFO.email}
+                  Email Us Here
                 </Link>
               </li>
               <li className="mb-4 text-gray-300">
