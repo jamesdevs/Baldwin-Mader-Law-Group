@@ -1,15 +1,14 @@
-import Image from '@/components/image';
-import Title from '@/components/title';
-import stats from '@/constants/stats';
-import { useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import Image from "@/components/image";
+import Title from "@/components/title";
+import { useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const WhyChooseUs = () => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['1 1', '0 1'],
+    offset: ["1 1", "0 1"],
   });
 
   const distance = useTransform(scrollYProgress, [0, 0.5], [1.3, 1]);
@@ -37,8 +36,9 @@ const WhyChooseUs = () => {
           />
 
           <p className="text-gray-100 text-lg max-w-lg text-center">
-          With over 70 years of combined experience, Baldwin Mader Law Group recovered millions for victims 
-nationwide. Trust our seasoned team to fight for you and recover your investment losses.
+            With over 70 years of combined experience, Baldwin Mader Law Group
+            recovered millions for victims nationwide. Trust our seasoned team
+            to fight for you and recover your investment losses.
           </p>
         </div>
         {/* <div className="flex justify-center flex-wrap max-sm:gap-10 lg:grid lg:grid-cols-3 lg:gap-5  max-lg:gap-20 max-lg:mt-14">
