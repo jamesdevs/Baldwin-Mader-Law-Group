@@ -26,7 +26,7 @@ export default [
   {
     name: "Christopher Mader",
     role: "Investment Fraud Lawyer",
-    imgSrc: "/images/bio/image-2.jpg",
+    imgSrc: "/images/bio/image-4.jpg",
     bio: "Christopher Mader has been a litigator for over 25 years, specializing in securities litigation since 2005. He was formerly an FINRA licensed registered representative at a leading investment firm, and is qualified as a Solicitor by The Law Society of England and Wales. Christopher has extensive experience representing whistleblowers at the Securities and Exchange Commission, and representing clients in complex business litigation and regulatory matters.",
     education: [
       {
