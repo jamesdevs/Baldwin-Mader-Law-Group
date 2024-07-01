@@ -27,18 +27,18 @@ Regulation and Division of Corporation Finance. Christopher Mader was formerly a
 representative at a major national broker dealer.
             </p>
 
-            <p className="mb-4 relative before:absolute before:left-0 before:h-full before:w-[2px] before:bg-primary pl-4 ml-6">
+            {/* <p className="mb-4 relative before:absolute before:left-0 before:h-full before:w-[2px] before:bg-primary pl-4 ml-6">
               <b>We have only one mission :</b>To help victims of financial fraud recover their losses. Baldwin Mader Law 
 Group has been involved in hundreds of cases at FINRA, District Courts nationwide and other forums. 
 When you hire our team, you are represented by the firm’s principals, not an inexperienced associate.
 
-            </p>
+            </p> 
 
             <p className="mb-4">
             Securities transactions are often difficult to analyze. Determining whether you have been the victim of Iinvestment fraud, securities fraud or financial elder abuse is daunting. You are welcome to contact us 
 for a consultation. When you call, you will talk to a partner of one of the leading securities 
 law firms in California 
-            </p>
+            </p>*/}
 
             <div className="flex gap-2 sm:gap-4 flex-wrap">
               <Link href="/contact-us" className="btn-after !text-black">
