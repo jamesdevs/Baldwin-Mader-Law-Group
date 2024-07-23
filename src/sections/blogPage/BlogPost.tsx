@@ -30,16 +30,6 @@ const shareSocialMeida = [
         `${INFO.site}/blog/${id}`
       )}`,
   },
-  {
-    icon: faInstagram,
-    name: 'instagram',
-    href: () => 'https://www.instagram.com/',
-  },
-  {
-    icon: faTiktok,
-    name: 'tiktok',
-    href: () => 'https://www.tiktok.com/',
-  },
 ];
 
 const BlogPost = ({ post, otherPosts }: any) => {
