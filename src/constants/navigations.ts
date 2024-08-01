@@ -57,6 +57,11 @@ export default [
     href: "/law-firm-regulatory-compliance",
   },
   {
+    id: "blog",
+    title: "Blog",
+    href: "/blog",
+  },
+  {
     id: "contact-us",
     title: "Contact",
     href: "/contact-us",

@@ -248,3 +248,11 @@ a {
 .swiper-pagination-bullet {
   @apply cursor-pointer;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0px 0 90px;
+
+}
