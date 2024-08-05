@@ -1,55 +1,16 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import SEO from '@/components/seo';
-import { INFO } from '@/constants';
-import Layout from '@/components/layout/Layout';
-import { GET_BLOG_POSTS } from '@/api/queries';
-import BlogList from '@/sections/blogPage/BlogList';
+import Layout from '@/components/layout/Layout'
+import SEO from '@/components/seo'
+import { INFO } from '@/constants'
+import BlogPage from '@/sections/blogPage'
+import React from 'react'
 
-export default function Blog({ posts }: any): JSX.Element {
-  const router = useRouter();
+const blog = () => {
   return (
     <Layout>
-      <SEO title={`Blog | ${INFO.companyName}`} />
-      <BlogList posts={posts} />
-    </Layout>
-  );
+    <SEO title={`Blog | ${INFO.companyName}`} />
+    <BlogPage />
+  </Layout>
+  )
 }
 
-export async function getStaticProps(): Promise<{
-  props: any;
-  revalidate: number;
-}> {
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query: GET_BLOG_POSTS,
-      }),
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to fetch data from the API');
-    }
-
-    const { data } = await response.json();
-
-    return {
-      props: {
-        posts: data?.posts?.nodes || [],
-      },
-      revalidate: 1,
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return {
-      props: {
-        posts: [],
-      },
-      revalidate: 1,
-    };
-  }
-}
+export default blog
