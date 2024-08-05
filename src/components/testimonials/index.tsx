@@ -66,7 +66,7 @@ const Testimonials = () => {
             {testimonials.map((item, i) => (
               <SwiperSlide className="testimonial-block !h-auto px-0" key={i}>
                 <div className="flex flex-col h-full justify-between">
-                  <div>
+                  <div className="flex flex-col max-sm:max-w-sm max-md:max-w-md">
                     <p className="max-w-2xl text-xl text-black font-bold mb-4">
                       "{item.testimonial}"
                     </p>
