@@ -66,30 +66,30 @@ export default function Blog({ post, otherPosts }: BlogProps): JSX.Element {
 }
 
 export async function getStaticPaths() {
-  // async function getPostSlugs() {
-  // const response = await fetch(process.env.NEXT_PUBLIC_API_URL || '', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({
-  //     query: GET_BLOG_SLUGS,
-  //   }),
-  // });
+  async function getPostSlugs() {
+    const response = await fetch(process.env.NEXT_PUBLIC_API_URL || '', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: GET_BLOG_SLUGS,
+      }),
+    });
 
-  //   const { data } = await response.json();
+    const { data } = await response.json();
 
-  //   return data?.posts?.nodes?.map((node: any) => node.id) || [];
-  // }
+    return data?.posts?.nodes?.map((node: any) => node.id) || [];
+  }
 
-  // const slugs = await getPostSlugs();
+  const slugs = await getPostSlugs();
 
-  // const paths = slugs?.map((slug: number) => ({
-  //   params: {
-  //     postId: slug.toString(),
-  //   },
-  // }));
-  const paths = '';
+  const paths = slugs.map((slug: number) => ({
+    params: {
+      postId: slug.toString(),
+    },
+  }));
+
   return {
     paths,
     fallback: 'blocking',
