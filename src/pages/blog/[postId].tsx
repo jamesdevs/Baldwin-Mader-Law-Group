@@ -67,15 +67,16 @@ export default function Blog({ post, otherPosts }: BlogProps): JSX.Element {
 
 export async function getStaticPaths() {
   async function getPostSlugs() {
-    const response = await fetch(process.env.NEXT_PUBLIC_API_URL || '', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query: GET_BLOG_SLUGS,
-      }),
-    });
+    const response = '';
+    // const response = await fetch(process.env.NEXT_PUBLIC_API_URL || '', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     query: GET_BLOG_SLUGS,
+    //   }),
+    // });
 
     const { data } = await response.json();
 
